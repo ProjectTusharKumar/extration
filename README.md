@@ -11,7 +11,21 @@ This Python utility extracts phone numbers and names from images and PDF files, 
 - Saves results to Excel files
 - Process single files or entire directories
 
-## Installation
+## One-Click Local Setup (Windows)
+
+To make setup and running the app easy for Windows users, a batch file is provided:
+
+1. Double-click or run `start_app.bat` in PowerShell or Command Prompt.
+2. The script will:
+   - Create a virtual environment (if not present)
+   - Activate the environment
+   - Upgrade pip
+   - Install all requirements
+   - Download the SpaCy English model
+   - Start the Flask app
+3. The server will be available at `http://localhost:5000`.
+
+## Manual Installation (Linux/macOS/Windows)
 
 1. Install the required system dependencies:
    ```bash
