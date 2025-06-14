@@ -4,3 +4,4 @@ opencv-python
 pandas
 spacy
 Flask
+python -m spacy download en_core_web_sm
