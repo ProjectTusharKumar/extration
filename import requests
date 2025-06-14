@@ -1,0 +1,11 @@
+import requests
+
+# Test with image
+with open("test_image.png", "rb") as img:
+    response = requests.post("https://expert-journey-7v779x47g5v5hrvwx-5000.app.github.dev/extract", files={"file": img})
+    print("Image result:", response.json())
+
+# Test with PDF
+with open("test_file.pdf", "rb") as pdf:
+    response = requests.post("https://expert-journey-7v779x47g5v5hrvwx-5000.app.github.dev/extract", files={"file": pdf})
+    print("PDF result:", response.json())
